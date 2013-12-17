@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.lang.String?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="174.0" prefWidth="368.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#404040" height="174.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="368.0" />
+    <Label alignment="CENTER" layoutX="14.0" layoutY="7.0" prefHeight="46.0" prefWidth="340.0" style="-fx-fill: #8fff00" text="Fryslan PowerChopper">
+      <font>
+        <Font size="25.0" fx:id="x3" />
+      </font>
+      <textFill>
+        <Color blue="0.000" green="1.000" red="0.561" fx:id="x1" />
+      </textFill>
+    </Label>
+    <Label layoutX="14.0" layoutY="60.0" text="Tree Name :" textFill="$x1" />
+    <ComboBox fx:id="TreeCombobox" layoutX="89.0" layoutY="58.0" prefHeight="21.0" prefWidth="251.0" promptText="Select Tree" style="-fx-background-color: #8fff00;&#10;-fx-opacity: 0.75;&#10;&#10;" visibleRowCount="3">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Tree" />
+          <String fx:value="Oak" />
+          <String fx:value="Willow" />
+          <String fx:value="Maple" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Rectangle fx:id="CloseRectangle" arcHeight="5.0" arcWidth="5.0" height="16.0" layoutX="345.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="18.0">
+      <fill>
+        <Color blue="0.125" green="0.125" red="0.125" fx:id="x2" />
+      </fill>
+    </Rectangle>
+    <Label layoutX="14.0" layoutY="84.0" text="Take Nests :" textFill="$x1" />
+    <Rectangle fx:id="TakeNestRectangle" arcHeight="5.0" arcWidth="5.0" fill="#202020" height="16.0" layoutX="89.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="46.0" layoutX="7.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="356.0" />
+    <Label fx:id="StartLabel" alignment="CENTER" font="$x3" layoutX="7.0" layoutY="120.0" prefHeight="46.0" prefWidth="356.0" text="Start Script" textFill="#8fff00" />
+  </children>
+</AnchorPane>
